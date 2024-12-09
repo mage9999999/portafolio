@@ -1,0 +1,346 @@
+/* Estilo general del cuerpo */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    font-family: 'Georgia', serif; /* Fuente para el texto */
+    background-color:rgb(194, 23, 23) ;
+
+}
+/* Sección del fondo */
+.fondo {
+    position: relative; /* Necesario para que los elementos absolutos se posicionen correctamente */
+    background-image: url('IMG/fotodsrgdgrrdgdhola.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+    z-index: 1;
+}
+
+.fondo-degradado {
+    position: absolute; /* Cambia a absolute para cubrir toda la sección */
+    top: 0; /* Asegura que cubra desde la parte superior */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(red, rgba(255, 0, 0, 0)); /* Degradado rojo */
+    opacity: 0.2; /* Ajusta la opacidad aquí */
+    z-index: 2; /* Asegura que esté encima de la imagen de fondo, pero debajo del texto */
+}
+
+/* Estilo del título principal */
+h1.a {
+    position: absolute; top: 80px; /* Mueve el título hacia abajo */
+    left: 0; /* Mueve el título hacia la derecha */
+    font-size: 8rem; /* Tamaño del texto principal */
+    font-weight: 400;
+    color: black; /* Ajusta el color del texto */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    
+}
+
+
+
+/* Ajustes para que el menú esté alineado como en la imagen */
+nav {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    z-index: 3; /* Encima de todo */
+    margin: 10 0px;
+    font-family: 'georgia', serif; 
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Fondo oscuro detrás del menú */
+nav::before {
+    content: '';
+    position: absolute;
+    top: 50px; /* Cambia a 10px o más para bajarlo más */
+    left: 0; /* Cambia a 0 para que esté alineado a la izquierda */
+    width: 100%;
+    height: 3px; /* Ajusta según lo necesites */
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1; /* Detrás del menú */
+}
+
+/* Estilo de la nueva sección */
+.nueva-seccion {
+    background-color: rgb(194, 23, 23); /* Color de fondo */
+    height: 110vh; /* Igual que la sección 1 */
+    display: flex; /* Para usar flexbox */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    text-align: center; /* Centra el texto */
+    position: relative; /* Necesario para posicionar el cuadrado */
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;    /* Centra verticalmente */
+    padding: 10px;
+    border-radius: 15px;
+    position: relative; /* Mantiene su contexto de posición */
+}
+.cuadrado {
+    width: 280px;
+    height: 380px;
+    background: rgb(4, 5, 56);
+    position: absolute;
+    top: 50%; /* Cambiado a 50% */
+    left: 50%; /* Cambiado a 50% */
+    transform: translate(-50%, -50%); /* Centra el cuadrado */
+    z-index: -10;
+    border-radius: 25px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+.image-section {
+    position: relative; /* Mantiene el contexto de posición */
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: center; /* Centra horizontalmente */
+    z-index: 1;
+}
+
+.image-section img {
+    width: 250px;
+    height: 350px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+.btn {
+    position: absolute;
+    padding: 10px 90px;
+    background-color: #3b4a6b;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.email-btn {
+    top: 20%;
+    left: -190px;
+}
+
+.insta-btn {
+    bottom: 20%;
+    left: -200px;
+}
+
+
+.text-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.text-section {
+    text-align: center;
+    margin-left: 40px;
+    max-width: 700px;
+    background-color: rgb(4, 5, 56);
+    color:#728bc0;
+    border-radius: 20px;
+    padding-top: 20px;    /* Espacio solo arriba */
+    padding-right: 10px;  /* Espacio solo a la derecha */
+    padding-bottom: 15px; /* Espacio solo abajo */
+    padding-left: 5px;    /* Espacio solo a la izquierda */
+    
+}
+
+nav {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Alinea .text y .text2 en extremos opuestos */
+    color: black;
+    z-index: 3; 
+}
+.text {
+    display: flex;
+    align-items: baseline; /* Alinea los elementos en línea base */
+    padding-bottom: 15px;
+}
+
+.text2 {
+    display: flex;
+    align-items: baseline; /* Alinea los elementos en línea base */
+}
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+    background-color: rgb(194, 23, 23); /* Fondo rojo */
+}
+
+.imagen {
+    position: relative;
+    text-align: center;
+}
+
+.imagen img {
+    width: 250px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.imagen p {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+    background-color: rgb(194, 23, 23); /* Fondo rojo */
+}
+
+.imagen {
+    position: relative;
+    text-align: center;
+}
+
+.imagen::before {
+    content: '';
+    position: absolute;
+    top: -10px;  /* Ajusta según lo necesites */
+    left: -10px; /* Ajusta según lo necesites */
+    width: 270px; /* Más ancho que la imagen para crear el marco */
+    height: 370px; /* Más alto que la imagen para crear el marco */
+    background-color: rgb(4, 5, 56); /* Color del marco */
+    border-radius: 20px; /* Redondeo similar al de la imagen */
+    z-index: 0; /* Detrás de la imagen */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Sombra del marco */
+}
+
+.imagen img {
+    position: relative;
+    z-index: 1; /* Encima del marco */
+    width: 250px;
+    height: 350px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.imagen p {
+    position: absolute;
+    bottom: 350px;
+    width: 100%;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    z-index: 2; /* Encima de la imagen */
+}
+.imagen-hover {
+    transition: transform 0.3s; /* Transición suave si decides usarla */
+}
+
+.imagen-hover:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al 110% */
+}
+form {
+    background: rgb(4, 5, 56);
+    border-radius: 10px;
+    padding: 50px;
+    width: 400px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color:#728bc0;
+    ;
+}
+
+input[type="text"], 
+input[type="number"], 
+input[type="email"],
+textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #fefefe;
+    color: #333333;
+}
+
+/* Estilo para el botón de color */
+input[type="color"] {
+    border: none;
+    height: 30px;
+    width: 60px;
+    padding: 0;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+/* Botón para seleccionar archivo */
+input[type="file"] {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 14px;
+    padding: 5px;
+}
+
+/* Textarea */
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+
+
+/* Estilo para los divs de form-group */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Centrado del formulario */
+form {
+    margin: 0 auto;
+    text-align: center;
+}
+

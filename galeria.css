@@ -1,0 +1,144 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(194, 23, 23);
+    color: #000000;
+}
+
+header {
+    background-color: rgb(194, 23, 23);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+   display: flex;
+   justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(194, 23, 23);
+    color: #000000;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Centrar el texto de todos los h1 */
+h1 {
+    text-align: center;  /* Centra el texto */
+    font-weight: bold;   /* Negrita */
+    margin: 20 auto;      /* Asegura que el h1 esté centrado en su contenedor */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+    justify-items: center;
+}
+
+.gallery-item {
+    background-color: rgb(4, 5, 56);
+    border: 2px solid rgb(4, 5, 56);
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+/* Estilo general del body */
+
+nav {
+    display: flex;
+    justify-content: center;  /* Centra los enlaces */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(194, 23, 23); /* Rojo oscuro */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    flex-direction: column;
+    font-family: 'georgia', serif;
+}
+
+nav::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: rgb(0, 0, 0); /* Línea negra */
+    margin-top: 10px;
+    width: 100%; /* Asegura que la línea cubra todo el ancho */
+}
+
+
+/* Contenedor de los enlaces */
+.text {
+    display: flex;
+    gap: 20px;
+}
+
+/* Estilo de los enlaces */
+.text a {
+    text-decoration: none;
+    color: #000; /* Color oscuro de los enlaces */
+    font-size: 18px;
+    font-weight: bold;
+}
+.gallery-item img {
+    max-width: 100%; /* Escala proporcionalmente el ancho */
+    max-height: 100%; /* Escala proporcionalmente la altura */
+    object-fit: cover; /* Asegura que la imagen se ajuste al contenedor sin distorsionarse */
+
+}
+#Game {
+    color: white; /* Cambia el color del texto a blanco */
+}
+.game2 {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos (h1 e img) en columna */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: space-between; /* Espacio equilibrado entre texto e imagen */
+    width: 300px; /* Ancho del cuadrado */
+    height: 300px; /* Altura del cuadrado */
+    background-color: rgb(4, 5, 56); /* Fondo del cuadrado */
+    color: white; /* Color del texto */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px; /* Espacio interior */
+    box-sizing: border-box; /* Incluye padding dentro del tamaño total */
+    text-align: center; /* Centra el texto dentro del elemento */
+}
+
+.game2 h1 {
+    margin: 0; /* Elimina el margen por defecto del h1 */
+    padding-top: 10px; /* Espacio superior del texto */
+}
+
+.game2 img {
+    max-width: 100%; /* La imagen ocupa el ancho máximo disponible */
+    max-height: 70%; /* La imagen ocupa un 70% de la altura del cuadrado */
+    object-fit: contain; /* Ajusta la imagen dentro del espacio sin distorsión */
+}

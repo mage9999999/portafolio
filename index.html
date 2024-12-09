@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magella Bassi</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav>
+    <div class="text">
+      <a href="galeriadijubo.html#Pinturas">Pinturas</a>
+      <a href="galeriadijubo.html#Digital">Digital</a>
+    </div>
+    <div class="text2">
+      <a href="galeriadijubo.html#Dibujos">Dibujos</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#Yo">Yo</a>
+    </div>
+  </nav>
+
+  <section class="fondo">
+    <div class="fondo-degradado"></div>
+    <!-- Degradado dentro de la sección -->
+    <h1 class="a">Magella Bassi</h1>
+  </section>
+
+  <section class="nueva-seccion" id="Yo">
+    <div class="container">
+      <div class="image-section">
+        <div class="cuadrado"></div> <!-- Cuadrado detrás de la imagen -->
+        <img src="IMG/AUTORETRATO.jpg" alt="RetratoArtistamagellaBassi">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=magellabassi1@gmail.com" class="btn email-btn">Email</a>
+        <a href="https://www.instagram.com/mage.lla9/?igsh=a3YzMnRyZmYxbHRx" class="btn insta-btn">Instagram</a>
+      </div>
+      <div class="text-section">
+        <h1>Artista</h1>
+        <p>Soy Magella Bassi, una artista con amplia trayectoria en el mundo del arte plástico. Mi formación comenzó en
+          la UTU, donde estudié dibujo y pintura, consolidando una base sólida en técnicas tradicionales. Actualmente,
+          estoy ampliando mis horizontes hacia el ámbito digital gracias a mi carrera en Arte, Diseño y Tecnología, la
+          cual me permite dominar herramientas esenciales del arte digital y explorar tecnologías emergentes como la
+          inteligencia artificial (IA). <br> Mi trabajo busca fusionar lo clásico con lo contemporáneo, creando un
+          puente entre ambas dimensiones.
+
+          Mi arte se adentra en las profundidades de la psique humana, abordando temas como los trastornos, el amor, la
+          sexualidad, el terror y la incomodidad. A través de imágenes que oscilan entre lo grotesco y lo inquietante,
+          exploro el deterioro del ser humano y su desconcertante pasividad ante estos conceptos. Mis obras no solo
+          buscan provocar una reacción visceral, sino también invitar a una reflexión profunda sobre la fragilidad y
+          complejidad de nuestra existencia.
+
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="galeria" id="galeria">
+    <h2 style="display: none;">Galería</h2>
+    <div class="imagen">
+      <a href="galeriadijubo.html#Dibujos">
+        <img class="imagen-hover" src="IMG/dibujo.jpg" alt="dibujomujerdemacrada">
+        <p>DIBUJOS</p>
+      </a>
+    </div>
+    <div class="imagen">
+      <a href="galeriadijubo.html#Pinturas">
+        <img class="imagen-hover" src="IMG/pintura.jpg" alt="pinturahombrepelolargo">
+        <p>PINTURAS</p>
+      </a>
+    </div>
+    <div class="imagen">
+      <a href="galeriadijubo.html#Digital">
+        <img class="imagen-hover" src="IMG/digital.jpg" alt="dibujodigitalmujerdesnuda">
+        <p>DIGITAL</p>
+      </a>
+    </div>
+  </section>
+
+
+  <form id="main-form">
+    <!-- Teléfono -->
+    <form action="index.html" class="form" method="">
+      <label for ="1">Telefono</label>
+      <input type = "number" id="1" placeholder="Ingrese su numero de telefono" size="30" required></input>
+      </br>
+       <!-- email-->
+       <label for="email">Email</label>
+       <input 
+           type="email" 
+           id="email" 
+           name="email" 
+           placeholder="Ingrese su email" 
+           pattern="[a-zA-Z0-9._%+-]+@gmail\.com" 
+           title="El correo debe ser una dirección válida de Gmail (ejemplo: usuario@gmail.com)" 
+           required>
+
+    <!-- Color Favorito -->
+    <div class="form-group">
+      <label for="color">Ingrese su color favorito</label>
+      <input type="color" id="color">
+    </div>
+
+    <!-- Seleccionar Archivo -->
+    <div class="form-group">
+      <label for="fileInput" class="btn">Seleccionar archivo</label>
+      <input type="file" id="fileInput">
+    </div>
+
+    <!-- Sugerencias -->
+    <div class="form-group">
+      <label for="sugerencia">Sugerencias</label>
+      <textarea id="sugerencia" placeholder="Ingrese su opinión"></textarea>
+    </div>
+
+    <!-- Botón de enviar -->
+    <div class="form-group">
+      <button type="reset" class="btn submit-btn">Enviar</button>
+    </div>
+  </form>
+</body>
+
+</html>
